@@ -1,0 +1,2804 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="side-nav-wrapper">
+  <div class="side-nav">
+    <h1>
+      
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      
+      <a rel="noopener" href="#">
+        <img src="javascript://" title="MultiQC"/>
+        <br class="hidden-xs"/>
+        <small class="hidden-xs">v1.19</small>
+      </a>
+    </h1>
+    
+    <p class="mqc_loading_warning">Loading report..</p>
+    <ul class="mqc-nav collapse navbar-collapse">
+      
+      <li>
+        <a rel="noopener" href="#general_stats" class="nav-l1">General Stats</a>
+      </li>
+      
+      
+      <li>
+        <a rel="noopener" href="#salmon_deseq2_clustering" class="nav-l1">SALMON DESeq2 sample similarity</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#salmon_deseq2_pca" class="nav-l1">SALMON DESeq2 PCA plot</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#salmon" class="nav-l1">Salmon</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#fastqc" class="nav-l1">FastQC (raw)</a>
+        <ul>
+        
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_counts" class="nav-l2">Sequence Counts</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_sequence_quality" class="nav-l2">Sequence Quality Histograms</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_sequence_quality_scores" class="nav-l2">Per Sequence Quality Scores</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_sequence_content" class="nav-l2">Per Base Sequence Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_sequence_gc_content" class="nav-l2">Per Sequence GC Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_n_content" class="nav-l2">Per Base N Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_length_distribution" class="nav-l2">Sequence Length Distribution</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_duplication_levels" class="nav-l2">Sequence Duplication Levels</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_overrepresented_sequences" class="nav-l2">Overrepresented sequences by sample</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_top_overrepresented_sequences" class="nav-l2">Top overrepresented sequences</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_adapter_content" class="nav-l2">Adapter Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_status_checks" class="nav-l2">Status Checks</a>
+            </li>
+            
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#cutadapt" class="nav-l1">Cutadapt</a>
+        <ul>
+        
+            <li>
+              <a rel="noopener" href="#cutadapt_filtered_reads" class="nav-l2">Filtered Reads</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#cutadapt_trimmed_sequences_3" class="nav-l2">Trimmed Sequence Lengths (3&#39;)</a>
+            </li>
+            
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#fastqc-1" class="nav-l1">FastQC (trimmed)</a>
+        <ul>
+        
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_counts-1" class="nav-l2">Sequence Counts</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_sequence_quality-1" class="nav-l2">Sequence Quality Histograms</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_sequence_quality_scores-1" class="nav-l2">Per Sequence Quality Scores</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_sequence_content-1" class="nav-l2">Per Base Sequence Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_sequence_gc_content-1" class="nav-l2">Per Sequence GC Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_per_base_n_content-1" class="nav-l2">Per Base N Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_length_distribution-1" class="nav-l2">Sequence Length Distribution</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_sequence_duplication_levels-1" class="nav-l2">Sequence Duplication Levels</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_overrepresented_sequences-1" class="nav-l2">Overrepresented sequences by sample</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_top_overrepresented_sequences-1" class="nav-l2">Top overrepresented sequences</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_adapter_content-1" class="nav-l2">Adapter Content</a>
+            </li>
+            
+            <li>
+              <a rel="noopener" href="#fastqc_status_checks-1" class="nav-l2">Status Checks</a>
+            </li>
+            
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#nf-core-rnaseq-methods-description" class="nav-l1">nf-core/rnaseq Methods Description</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#software_versions" class="nav-l1">nf-core/rnaseq Software Versions</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+      
+      <li>
+        <a rel="noopener" href="#nf-core-rnaseq-summary" class="nav-l1">nf-core/rnaseq Workflow Summary</a>
+        <ul>
+        
+        </ul>
+      </li>
+      
+      
+    </ul>
+  </div>
+  
+  <div><span class="glyphicon glyphicon-triangle-left"></span></div>
+</div>
+
+
+
+<div class="mqc-toolbox collapse">
+
+  
+  <div class="mqc-toolbox-buttons hidden-xs">
+    <a rel="noopener" class="mqc-toolbox-label" href="#mqc_cols" title="Open Toolbox">Toolbox</a>
+    <ul>
+      <li><a rel="noopener" href="#mqc_cols" title="Highlight"><span class="glyphicon glyphicon-pushpin"></span></a></li>
+      <li><a rel="noopener" href="#mqc_renamesamples" title="Rename"><span class="glyphicon glyphicon-font"></span></a></li>
+      <li><a rel="noopener" href="#mqc_hidesamples" title="Hide"><span class="glyphicon glyphicon-eye-close"></span></a></li>
+      <li><a rel="noopener" href="#mqc_exportplots" title="Export"><span class="glyphicon glyphicon-download-alt"></span></a></li>
+      <li><a rel="noopener" href="#mqc_saveconfig" title="Save"><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
+      <li><a rel="noopener" href="#mqc_citations" title="Citations"><span class="glyphicon glyphicon-education"></span></a></li>
+      <li><a rel="noopener" href="#mqc_about" title="About"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+    </ul>
+  </div>
+
+  <div class="mqc-toolbox-wrapper">
+    
+    <div class="mqc-toolbox-header hidden-xs">
+      <h3>MultiQC Toolbox</h3>
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>
+        Apply
+        Highlight Samples
+      </h4>
+      
+      
+        
+        
+        +
+      
+      <p class="mqc_regex_mode_p">
+        <span class="mqc_switch_wrapper mqc_regex_mode">Regex mode <span class="mqc_switch re_mode off">off</span></span>
+        help
+        <span class="glyphicon glyphicon-trash"></span> Clear
+      </p>
+      <ul class="mqc_filters"></ul>
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>
+        Apply
+        Rename Samples
+      </h4>
+      
+      
+        
+        
+        +
+      
+      <p><a rel="noopener" href="#mqc_renamesamples_bulk_collapse">Click here for bulk input.</a></p>
+      <div class="collapse">
+        <p>Paste two columns of a tab-delimited table here (eg. from Excel).</p>
+        <p>First column should be the old name, second column the new name.</p>
+        
+          
+          Add
+        
+      </div>
+      <p class="mqc_regex_mode_p">
+        <span class="mqc_switch_wrapper mqc_regex_mode">Regex mode <span class="mqc_switch re_mode off">off</span></span>
+        help
+        <span class="glyphicon glyphicon-trash"></span> Clear
+      </p>
+      <ul class="mqc_filters"></ul>
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>
+        Apply
+        Show / Hide Samples
+      </h4>
+      
+      
+        <div class="radio input-sm">
+          <label> Hide matching samples</label>
+        </div>
+        <div class="radio input-sm">
+          <label> Show only matching samples</label>
+        </div>
+        <div class="form-inline">
+          
+          +
+        </div>
+      
+      
+      <p class="mqc_regex_mode_p">
+        <span class="mqc_switch_wrapper mqc_regex_mode">Regex mode <span class="mqc_switch re_mode off">off</span></span>
+        help
+        <span class="glyphicon glyphicon-trash"></span> Clear
+      </p>
+      <ul class="mqc_filters"></ul>
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>Export Plots</h4>
+      
+        <ul class="nav nav-tabs">
+          <li class="active"><a rel="noopener" href="#mqc_image_download">Images</a></li>
+          <li><a rel="noopener" href="#mqc_data_download">Data</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active">
+            <div class="row">
+              <div class="form-group col-sm-6">
+                <div class="input-group input-group-sm">
+                  
+                  <span class="input-group-addon">px</span>
+                </div>
+              </div>
+              <div class="form-group col-sm-6">
+                <div class="input-group input-group-sm">
+                  
+                  <span class="input-group-addon">px</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-6 checkbox">
+                <label> Aspect ratio</label>
+              </div>
+              <div class="form-group col-sm-6">
+                
+                  <option value="image/png">PNG</option>
+                  <option value="image/jpeg">JPEG</option>
+                  <option value="image/svg+xml">SVG</option>
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 checkbox">
+                <label for="mqc_export_scaling">Plot scaling</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group input-group-sm">
+                  
+                  <span class="input-group-addon">X</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade">
+            <p>Download the raw data used to create the plots in this report below:</p>
+            <div class="row">
+              <div class="form-group col-sm-4 checkbox">
+                <label>Format:</label>
+              </div>
+              <div class="form-group col-sm-8">
+                
+                  <option value="tsv">Tab-separated</option>
+                  <option value="csv">Comma-separated</option>
+                  <option value="json">JSON</option>
+                
+              </div>
+            </div>
+            
+            <p>Note that additional data was saved in <code>multiqc_report_data</code> when this report was generated.</p>
+            
+            <div></div>
+          </div>
+        </div>
+
+        <hr/>
+        <h5>Choose Plots</h5>
+        <span class="glyphicon glyphicon-check"></span> All
+        <span class="glyphicon glyphicon-unchecked"></span> None
+        <div></div>
+
+        <hr/>
+        
+          <span class="glyphicon glyphicon-download-alt"></span> &#160; Download Plot <span>Images</span>
+        
+        <p><small>If you use plots from MultiQC in a publication or presentation, please cite:</small></p>
+        <blockquote>
+          <strong>MultiQC: Summarize analysis results for multiple tools and samples in a single report</strong><br/>
+          <em>Philip Ewels, M&#229;ns Magnusson, Sverker Lundin and Max K&#228;ller</em><br/>
+          Bioinformatics (2016)<br/>
+          doi: <a rel="noopener" href="http://dx.doi.org/10.1093/bioinformatics/btw354" target="_blank">10.1093/bioinformatics/btw354</a><br/>
+          PMID: <a rel="noopener" href="http://www.ncbi.nlm.nih.gov/pubmed/27312411" target="_blank">27312411</a>
+        </blockquote>
+      
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>Save Settings</h4>
+      <p>You can save the toolbox settings for this report to the browser.</p>
+      
+        
+        <span class="glyphicon glyphicon-floppy-disk"></span> Save
+      
+      <hr/>
+
+      <h4>Load Settings</h4>
+      <p>Choose a saved report profile from the dropdown box below:</p>
+      
+        <div class="form-group">
+          
+            <option value="">[ select ]</option>
+          
+        </div>
+        <div class="form-group actions">
+          <span class="glyphicon glyphicon-floppy-open"></span> Load
+          <span class="glyphicon glyphicon-trash"></span> Delete
+          <span class="glyphicon glyphicon-floppy-saved"></span> Set default
+          <span class="glyphicon glyphicon-floppy-remove"></span> Clear default
+        </div>
+      
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>Tool Citations</h4>
+      <p>Please remember to cite the tools that you use in your analysis.</p>
+      <p>To help with this, you can download publication details of the tools mentioned in this report:</p>
+      <p><span class="glyphicon glyphicon-barcode"></span> List of DOIs</p>
+      <p><span class="glyphicon glyphicon-bold"></span> BibTeX file</p>
+    </div>
+
+    
+    <div class="mqc_filter_section">
+      <h4>About MultiQC</h4>
+      <p>This report was generated using MultiQC, version 1.19</p>
+      <p>You can see a YouTube video describing how to use MultiQC reports here:
+        <a rel="noopener" href="https://youtu.be/qPbIlO_KWN0?list=PLIA2-lqNuhvFGAsB92N0v7Qi5xCxCNsYM" target="_blank">https://youtu.be/qPbIlO_KWN0</a></p>
+      <p>For more information about MultiQC, including other videos and
+        extensive documentation, please visit <a rel="noopener" href="http://multiqc.info/?ref=mqc_report" target="_blank">http://multiqc.info</a></p>
+      <p>You can report bugs, suggest improvements and find the source code for MultiQC on GitHub:
+        <a rel="noopener" href="https://github.com/ewels/MultiQC" target="_blank">https://github.com/ewels/MultiQC</a></p>
+      <p>MultiQC is published in Bioinformatics:</p>
+      <blockquote>
+        <strong>MultiQC: Summarize analysis results for multiple tools and samples in a single report</strong><br/>
+        <em>Philip Ewels, M&#229;ns Magnusson, Sverker Lundin and Max K&#228;ller</em><br/>
+        Bioinformatics (2016)<br/>
+        doi: <a rel="noopener" href="http://dx.doi.org/10.1093/bioinformatics/btw354" target="_blank">10.1093/bioinformatics/btw354</a><br/>
+        PMID: <a rel="noopener" href="http://www.ncbi.nlm.nih.gov/pubmed/27312411" target="_blank">27312411</a>
+      </blockquote>
+      <hr/>
+      <p class="text-center seqera-logo">
+        MultiQC is developed by:<br/>
+        <a rel="noopener" href="https://seqera.io" target="_blank"><img src="javascript://"/></a>
+      </p>
+
+    </div>
+
+  </div>
+  <a rel="noopener" href="#top" class="mqc-toplink hidden-xs" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+</div>
+
+
+<div class="mainpage">
+
+  
+
+<h1>
+    
+    <a rel="noopener" href="http://multiqc.info" target="_blank">
+        <img src="javascript://" title="MultiQC" class="multiqc_logo"/>
+    </a>
+</h1>
+
+
+
+<p class="lead">
+  A modular tool to aggregate results from bioinformatics analyses across many samples into a single report.
+</p>
+
+
+
+<blockquote class="report_comment">This report has been generated by the <a rel="noopener" href="https://github.com/nf-core/rnaseq/releases/tag/3.14.0" target="_blank">nf-core/rnaseq</a> analysis pipeline. For information about how to interpret these results, please see the <a rel="noopener" href="https://nf-co.re/rnaseq/3.14.0/docs/output" target="_blank">documentation</a>.
+</blockquote>
+
+
+
+
+
+  <div class="alert alert-danger">
+    <h4>JavaScript Disabled</h4>
+    <p>MultiQC reports use JavaScript for plots and toolbox functions. It looks like
+    you have JavaScript disabled in your web browser. Please note that many of the report
+    functions will not work as intended.</p>
+  </div>
+
+
+<div class="alert alert-warning mqc_loading_warning" style="display:none;"><span class="glyphicon glyphicon-time"></span> &#160;Loading report..</div>
+
+
+<div>
+  <p>Report
+  
+    generated on 2024-05-11, 02:46 EDT
+  
+  
+    based on data in:
+    
+      <code class="mqc_analysis_path">/scratch/zmk256/FinalProjectA/work/5c/128f264a7f1a5d9d6c24bd3dbd086d</code></p>
+    
+  
+</div>
+
+
+
+
+
+
+
+<hr/>
+
+<div class="alert alert-info alert-dismissible hidden-print" style="display: none;">
+  <span>&#215;</span>
+  don&#39;t show again
+  <span class="glyphicon glyphicon-info-sign"></span>
+  <strong>Welcome!</strong> Not sure where to start? &#160;
+  <a rel="noopener" href="https://www.youtube.com/watch?v=qPbIlO_KWN0" target="_blank" class="btn btn-info btn-sm">Watch a tutorial video</a>
+  &#160; <small><em>(6:06)</em></small>
+</div>
+
+
+
+  
+
+
+<div class="mqc-module-section">
+  <h2>General Statistics</h2>
+  
+  
+        
+            <span class="glyphicon glyphicon-copy"></span> Copy table
+        
+        
+            
+                <span class="glyphicon glyphicon-th"></span> Configure Columns
+            
+            
+        
+            <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+        
+        
+            
+                <span class="glyphicon glyphicon glyphicon-stats"></span> Plot
+            
+            
+        <small class="mqc_table_numrows_text">Showing <sup class="mqc_table_numrows">6</sup>/<sub>6</sub> rows and <sup class="mqc_table_numcols">11</sup>/<sub>18</sub> columns.</small>
+        
+        <div class="mqc_table_container">
+            <div class="table-responsive mqc-table-responsive">
+                <table class="table table-condensed mqc_table">
+        <thead><tr><th class="rowheader">Sample Name</th><th class="mqc-generalstats-salmon-percent_mapped"><span class="mqc_table_tooltip" title="Salmon: % Mapped reads">% Aligned</span></th><th class="mqc-generalstats-salmon-num_mapped"><span class="mqc_table_tooltip" title="Salmon: Mapped reads (millions)">M Aligned</span></th><th class="mqc-generalstats-salmon-library_types hidden"><span class="mqc_table_tooltip" title="Salmon: Library types">Library types</span></th><th class="mqc-generalstats-salmon-compatible_fragment_ratio"><span class="mqc_table_tooltip" title="Salmon: Compatible fragment ratio">CFR</span></th><th class="mqc-generalstats-salmon-strand_mapping_bias"><span class="mqc_table_tooltip" title="Salmon: Strand mapping bias">M Bias</span></th><th class="mqc-generalstats-fastqc_raw-percent_duplicates"><span class="mqc_table_tooltip" title="FastQC (raw): % Duplicate Reads">% Dups</span></th><th class="mqc-generalstats-fastqc_raw-percent_gc"><span class="mqc_table_tooltip" title="FastQC (raw): Average % GC Content">% GC</span></th><th class="mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><span class="mqc_table_tooltip" title="FastQC (raw): Average Read Length (bp)">Average Read Length</span></th><th class="mqc-generalstats-fastqc_raw-median_sequence_length hidden"><span class="mqc_table_tooltip" title="FastQC (raw): Median Read Length (bp)">Median Read Length</span></th><th class="mqc-generalstats-fastqc_raw-percent_fails hidden"><span class="mqc_table_tooltip" title="FastQC (raw): Percentage of modules failed in FastQC report (includes those not plotted here)">% Failed</span></th><th class="mqc-generalstats-fastqc_raw-total_sequences"><span class="mqc_table_tooltip" title="FastQC (raw): Total Sequences (millions)">M Seqs</span></th><th class="mqc-generalstats-cutadapt-percent_trimmed"><span class="mqc_table_tooltip" title="Cutadapt: % Total Base Pairs trimmed">% BP Trimmed</span></th><th class="mqc-generalstats-fastqc_trimmed-percent_duplicates"><span class="mqc_table_tooltip" title="FastQC (trimmed): % Duplicate Reads">% Dups</span></th><th class="mqc-generalstats-fastqc_trimmed-percent_gc"><span class="mqc_table_tooltip" title="FastQC (trimmed): Average % GC Content">% GC</span></th><th class="mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><span class="mqc_table_tooltip" title="FastQC (trimmed): Average Read Length (bp)">Average Read Length</span></th><th class="mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><span class="mqc_table_tooltip" title="FastQC (trimmed): Median Read Length (bp)">Median Read Length</span></th><th class="mqc-generalstats-fastqc_trimmed-percent_fails hidden"><span class="mqc_table_tooltip" title="FastQC (trimmed): Percentage of modules failed in FastQC report (includes those not plotted here)">% Failed</span></th><th class="mqc-generalstats-fastqc_trimmed-total_sequences"><span class="mqc_table_tooltip" title="FastQC (trimmed): Total Sequences (millions)">M Seqs</span></th></tr></thead><tbody><tr><th class="rowheader">SRR7819990</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:90.90073440405693%;background-color:#b3cfc2 !important;"></span><span class="val">90.9%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:87.15794853737702%;background-color:#e1b3c7 !important;"></span><span class="val">55.7</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:65.49712107357051%;background-color:#ffedd5 !important;"></span><span class="val">65.5%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:96.10206669212013%;background-color:#b5c4d7 !important;"></span><span class="val">61.4</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.4441965086301236%;background-color:#c2c5e1 !important;"></span><span class="val">1.4%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:60.991610978266905%;background-color:#fff4db !important;"></span><span class="val">61.0%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:99.71625909548301%;background-color:#b3d2c3 !important;"></span><span class="val">73 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:95.88255706489333%;background-color:#b5c4d7 !important;"></span><span class="val">61.2</span></div></td></tr><tr><th class="rowheader">SRR7819991</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:92.08544122651703%;background-color:#b3cec1 !important;"></span><span class="val">92.1%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:91.93947264452615%;background-color:#dbb3c3 !important;"></span><span class="val">58.7</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:67.15474424382387%;background-color:#feebd3 !important;"></span><span class="val">67.2%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b5c1d3 !important;"></span><span class="val">63.9</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.1654588791049996%;background-color:#c2c5e0 !important;"></span><span class="val">1.2%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:62.779650672638574%;background-color:#fff2d9 !important;"></span><span class="val">62.8%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:99.9403433105711%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:99.84148571147982%;background-color:#b5c1d3 !important;"></span><span class="val">63.8</span></div></td></tr><tr><th class="rowheader">SRR7819992</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:93.05537822873117%;background-color:#b3cdc1 !important;"></span><span class="val">93.1%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:81.50567154090746%;background-color:#e8b5c9 !important;"></span><span class="val">52.1</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:66.94348369814408%;background-color:#feebd3 !important;"></span><span class="val">66.9%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:87.90072943253776%;background-color:#b5cae1 !important;"></span><span class="val">56.1</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.3608319116056868%;background-color:#c2c5e0 !important;"></span><span class="val">1.4%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:62.65480134863935%;background-color:#fff2d9 !important;"></span><span class="val">62.7%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:99.93864267045578%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:87.5883512509783%;background-color:#b5cbe1 !important;"></span><span class="val">55.9</span></div></td></tr><tr><th class="rowheader">SRR7819993</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:92.39376166783192%;background-color:#b3cec1 !important;"></span><span class="val">92.4%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:83.44125382428483%;background-color:#e5b4c8 !important;"></span><span class="val">53.3</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:66.47669111027182%;background-color:#ffecd4 !important;"></span><span class="val">66.5%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:90.54139152609633%;background-color:#b5c8de !important;"></span><span class="val">57.8</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.2363680404758666%;background-color:#c2c5e0 !important;"></span><span class="val">1.2%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:62.12960790784995%;background-color:#fff3da !important;"></span><span class="val">62.1%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:99.9685273567136%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:90.310484515467%;background-color:#b5c9de !important;"></span><span class="val">57.7</span></div></td></tr><tr><th class="rowheader">SRR7819994</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:92.68125391697545%;background-color:#b3cdc1 !important;"></span><span class="val">92.7%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:85.48554262505523%;background-color:#e3b3c8 !important;"></span><span class="val">54.6</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:67.00372045031563%;background-color:#feebd3 !important;"></span><span class="val">67.0%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:92.29752960971001%;background-color:#b5c7dc !important;"></span><span class="val">58.9</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.0203003483350521%;background-color:#c2c5e0 !important;"></span><span class="val">1.0%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:62.71357716810183%;background-color:#fff2d9 !important;"></span><span class="val">62.7%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:92.23606609987584%;background-color:#b5c7dc !important;"></span><span class="val">58.9</span></div></td></tr><tr><th class="rowheader">SRR7819995</th><td class="data-coloured mqc-generalstats-salmon-percent_mapped"><div class="wrapper"><span class="bar" style="width:92.65945411973398%;background-color:#b3cdc1 !important;"></span><span class="val">92.7%</span></div></td><td class="data-coloured mqc-generalstats-salmon-num_mapped"><div class="wrapper"><span class="bar" style="width:67.28986976637917%;background-color:#f5bcd6 !important;"></span><span class="val">43.0</span></div></td><td class="mqc-generalstats-salmon-library_types hidden">SR</td><td class="data-coloured mqc-generalstats-salmon-compatible_fragment_ratio"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bf !important;"></span><span class="val">100.0%</span></div></td><td class="data-coloured mqc-generalstats-salmon-strand_mapping_bias"><div class="wrapper"><span class="bar" style="width:0.0%;background-color:#fdfefe !important;"></span><span class="val">0.0</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_duplicates"><div class="wrapper"><span class="bar" style="width:63.879768718014304%;background-color:#fff0d7 !important;"></span><span class="val">63.9%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">75 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_raw-total_sequences"><div class="wrapper"><span class="bar" style="width:72.67210753543193%;background-color:#bed6ea !important;"></span><span class="val">46.4</span></div></td><td class="data-coloured mqc-generalstats-cutadapt-percent_trimmed"><div class="wrapper"><span class="bar" style="width:1.0428962878501236%;background-color:#c2c5e0 !important;"></span><span class="val">1.0%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_duplicates"><div class="wrapper"><span class="bar" style="width:59.733860808507586%;background-color:#fff6dd !important;"></span><span class="val">59.7%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_gc"><div class="wrapper"><span class="bar" style="width:49.0%;background-color:#f5d2e8 !important;"></span><span class="val">49%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-avg_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:99.98212053269572%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-median_sequence_length hidden"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3d2c3 !important;"></span><span class="val">74 bp</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-percent_fails hidden"><div class="wrapper"><span class="bar" style="width:20.0%;background-color:#feefe9 !important;"></span><span class="val">20%</span></div></td><td class="data-coloured mqc-generalstats-fastqc_trimmed-total_sequences"><div class="wrapper"><span class="bar" style="width:72.62061967193073%;background-color:#bed6ea !important;"></span><span class="val">46.4</span></div></td></tr></tbody></table></div></div>
+    
+    <div class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>&#215;</span>
+            <h4 class="modal-title">General Statistics: Columns</h4>
+          </div>
+          <div class="modal-body">
+            <p>Uncheck the tick box to hide columns. Click and drag the handle on the left to change order. Table ID: <code>general_stats_table</code></p>
+            <p>
+                Show All
+                Show None
+            </p>
+            <table class="table mqc_table mqc_sortable mqc_configModal_table">
+              <thead>
+                <tr>
+                  <th class="sorthandle" style="text-align:center;">Sort</th>
+                  <th style="text-align:center;">Visible</th>
+                  <th>Group</th>
+                  <th>Column</th>
+                  <th>Description</th>
+                  <th>ID</th>
+                  <th>Scale</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="mqc-generalstats-salmon-percent_mapped" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Salmon</td>
+          <td>% Aligned</td>
+          <td>% Mapped reads</td>
+          <td><code>percent_mapped</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-salmon-num_mapped" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Salmon</td>
+          <td>M Aligned</td>
+          <td>Mapped reads (millions)</td>
+          <td><code>num_mapped</code></td>
+          <td>read_count</td>
+        </tr>
+        <tr class="mqc-generalstats-salmon-library_types text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Salmon</td>
+          <td>Library types</td>
+          <td>Library types</td>
+          <td><code>library_types</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-salmon-compatible_fragment_ratio" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Salmon</td>
+          <td>CFR</td>
+          <td>Compatible fragment ratio</td>
+          <td><code>compatible_fragment_ratio</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-salmon-strand_mapping_bias" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Salmon</td>
+          <td>M Bias</td>
+          <td>Strand mapping bias</td>
+          <td><code>strand_mapping_bias</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-percent_duplicates" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>% Dups</td>
+          <td>% Duplicate Reads</td>
+          <td><code>percent_duplicates</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-percent_gc" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>% GC</td>
+          <td>Average % GC Content</td>
+          <td><code>percent_gc</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-avg_sequence_length text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>Average Read Length</td>
+          <td>Average Read Length (bp)</td>
+          <td><code>avg_sequence_length</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-median_sequence_length text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>Median Read Length</td>
+          <td>Median Read Length (bp)</td>
+          <td><code>median_sequence_length</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-percent_fails text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>% Failed</td>
+          <td>Percentage of modules failed in FastQC report (includes those not plotted here)</td>
+          <td><code>percent_fails</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_raw-total_sequences" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>M Seqs</td>
+          <td>Total Sequences (millions)</td>
+          <td><code>total_sequences</code></td>
+          <td>read_count</td>
+        </tr>
+        <tr class="mqc-generalstats-cutadapt-percent_trimmed" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>Cutadapt</td>
+          <td>% BP Trimmed</td>
+          <td>% Total Base Pairs trimmed</td>
+          <td><code>percent_trimmed</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-percent_duplicates" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>% Dups</td>
+          <td>% Duplicate Reads</td>
+          <td><code>percent_duplicates</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-percent_gc" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>% GC</td>
+          <td>Average % GC Content</td>
+          <td><code>percent_gc</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-avg_sequence_length text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>Average Read Length</td>
+          <td>Average Read Length (bp)</td>
+          <td><code>avg_sequence_length</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-median_sequence_length text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>Median Read Length</td>
+          <td>Median Read Length (bp)</td>
+          <td><code>median_sequence_length</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-percent_fails text-muted" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>% Failed</td>
+          <td>Percentage of modules failed in FastQC report (includes those not plotted here)</td>
+          <td><code>percent_fails</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="mqc-generalstats-fastqc_trimmed-total_sequences" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (trimmed)</td>
+          <td>M Seqs</td>
+          <td>Total Sequences (millions)</td>
+          <td><code>total_sequences</code></td>
+          <td>read_count</td>
+        </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="modal-footer"> Close </div>
+    </div> </div> </div>
+</div>
+
+
+  
+
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">SALMON DESeq2 sample similarity</h2>
+          
+        </div>
+        <p>is generated from clustering by Euclidean distances between <a rel="noopener" href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html" target="_blank">DESeq2</a> rlog values for each sample in the <a rel="noopener" href="https://github.com/nf-core/rnaseq/blob/master/bin/deseq2_qc.r"><code>deseq2_qc.r</code></a> script.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-salmon_deseq2_clustering">
+            
+            
+            
+            
+            <div class="mqc-section-plot">
+    <div class="mqc_hcplot_plotgroup">
+        <div class="btn-group hc_switch_group">
+            
+                <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+            
+        </div>
+        <div class="mqc_hcplot_range_sliders">
+            <div>
+                <label for="salmon_deseq2_clustering-plot_range_slider_min_txt">Min:</label>
+                
+                
+            </div>
+            <div>
+                <label for="salmon_deseq2_clustering-plot_range_slider_max_txt">Max:</label>
+                
+                
+            </div>
+        </div>
+        <div class="hc-plot-wrapper">
+            <div class="hc-plot not_rendered hc-heatmap">
+                <small>loading..</small>
+            </div>
+        </div>
+    </div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">SALMON DESeq2 PCA plot</h2>
+          
+        </div>
+        <p>PCA plot between samples in the experiment. These values are calculated using <a rel="noopener" href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html">DESeq2</a> in the <a rel="noopener" href="https://github.com/nf-core/rnaseq/blob/master/bin/deseq2_qc.r"><code>deseq2_qc.r</code></a> script.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-salmon_deseq2_pca">
+            
+            
+            
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-scatter-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">Salmon</h2>
+          
+        </div>
+        <p><a rel="noopener" href="https://combine-lab.github.io/salmon/" target="_blank">Salmon</a> is a tool for quantifying the expression of transcripts using RNA-seq data.<em class="text-muted small" style="margin-left: 1rem;">DOI:  <a rel="noopener" class="module-doi" href="https://doi.org/10.1038/nmeth.4197" target="_blank">10.1038/nmeth.4197</a>.</em></p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-salmon">
+            
+            
+            
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">FastQC (raw)</h2>
+          
+        </div>
+        <p><a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC (raw)</a> This section of the report shows FastQC results before adapter trimming.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Sequence Counts
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Sequence counts for each sample. Duplicate read counts are an estimate only.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>This plot show the total number of reads, broken down into unique and duplicate
+if possible (only more recent versions of FastQC give duplicate info).</p>
+<p>You can read more about duplicate calculation in the
+<a rel="noopener" href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html">FastQC documentation</a>.
+A small part has been copied here for convenience:</p>
+<p><em>Only sequences which first appear in the first 100,000 sequences
+in each file are analysed. This should be enough to get a good impression
+for the duplication levels in the whole file. Each sequence is tracked to
+the end of the file to give a representative count of the overall duplication level.</em></p>
+<p><em>The duplication detection requires an exact sequence match over the whole length of
+the sequence. Any reads over 75bp in length are truncated to 50bp for this analysis.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group"> 
+Number of reads 
+Percentages 
+</div> <div class="hc-plot-wrapper">
+        <div class="hc-plot not_rendered hc-bar-plot"><small>loading..</small></div>
+    </div></div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+    </div> 
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Sequence Quality Histograms
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The mean quality value across each base position in the read.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>To enable multiple samples to be plotted on the same graph, only the mean quality
+scores are plotted (unlike the box plots seen in FastQC reports).</p>
+<p>Taken from the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/2%20Per%20Base%20Sequence%20Quality.html">FastQC help</a>:</p>
+<p><em>The y-axis on the graph shows the quality scores. The higher the score, the better
+the base call. The background of the graph divides the y axis into very good quality
+calls (green), calls of reasonable quality (orange), and calls of poor quality (red).
+The quality of calls on most platforms will degrade as the run progresses, so it is
+common to see base calls falling into the orange area towards the end of a read.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Per Sequence Quality Scores
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The number of reads with average quality scores. Shows if a subset of reads has poor quality.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/3%20Per%20Sequence%20Quality%20Scores.html">FastQC help</a>:</p>
+<p><em>The per sequence quality score report allows you to see if a subset of your
+sequences have universally low quality values. It is often the case that a
+subset of sequences will have universally poor quality, however these should
+represent only a small percentage of the total sequences.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Per Base Sequence Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The proportion of each base position for which each of the four normal DNA bases has been called.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>To enable multiple samples to be shown in a single plot, the base composition data
+is shown as a heatmap. The colours represent the balance between the four bases:
+an even distribution should give an even muddy brown colour. Hover over the plot
+to see the percentage of the four bases under the cursor.</p>
+<p><strong>To see the data as a line plot, as in the original FastQC graph, click on a sample track.</strong></p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html">FastQC help</a>:</p>
+<p><em>Per Base Sequence Content plots out the proportion of each base position in a
+file for which each of the four normal DNA bases has been called.</em></p>
+<p><em>In a random library you would expect that there would be little to no difference
+between the different bases of a sequence run, so the lines in this plot should
+run parallel with each other. The relative amount of each base should reflect
+the overall amount of these bases in your genome, but in any case they should
+not be hugely imbalanced from each other.</em></p>
+<p><em>It&#39;s worth noting that some types of library will always produce biased sequence
+composition, normally at the start of the read. Libraries produced by priming
+using random hexamers (including nearly all RNA-Seq libraries) and those which
+were fragmented using transposases inherit an intrinsic bias in the positions
+at which reads start. This bias does not concern an absolute sequence, but instead
+provides enrichement of a number of different K-mers at the 5&#39; end of the reads.
+Whilst this is a true technical bias, it isn&#39;t something which can be corrected
+by trimming and in most cases doesn&#39;t seem to adversely affect the downstream
+analysis.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"></div>
+            <div>
+            <div class="alert alert-info">
+               <span class="glyphicon glyphicon-hand-up"></span>
+               Click a sample row to see a line plot for that dataset.
+            </div>
+            <h5><span class="s_name text-primary"><span class="glyphicon glyphicon-info-sign"></span> Rollover for sample name</span></h5>
+            <span class="glyphicon glyphicon-download-alt"></span> Export Plot
+            <div class="fastqc_seq_heatmap_key">
+                Position: <span>-</span>
+                <div><span> %T: <span>-</span></span></div>
+                <div><span> %C: <span>-</span></span></div>
+                <div><span> %A: <span>-</span></span></div>
+                <div><span> %G: <span>-</span></span></div>
+            </div>
+            <div class="fastqc-overlay-plot">
+                <div class="fastqc_per_base_sequence_content_plot hc-plot has-custom-export">
+                    <canvas height="100%" width="800px" style="width:100%;"></canvas>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Per Sequence GC Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The average GC content of reads. Normal random library typically have a
+        roughly normal distribution of GC content.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/5%20Per%20Sequence%20GC%20Content.html">FastQC help</a>:</p>
+<p><em>This module measures the GC content across the whole length of each sequence
+in a file and compares it to a modelled normal distribution of GC content.</em></p>
+<p><em>In a normal random library you would expect to see a roughly normal distribution
+of GC content where the central peak corresponds to the overall GC content of
+the underlying genome. Since we don&#39;t know the the GC content of the genome the
+modal GC content is calculated from the observed data and used to build a
+reference distribution.</em></p>
+<p><em>An unusually shaped distribution could indicate a contaminated library or
+some other kinds of biased subset. A normal distribution which is shifted
+indicates some systematic bias which is independent of base position. If there
+is a systematic bias which creates a shifted normal distribution then this won&#39;t
+be flagged as an error by the module since it doesn&#39;t know what your genome&#39;s
+GC content should be.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group">
+Percentages
+Counts
+</div>
+
+<div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Per Base N Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The percentage of base calls at each position for which an <code>N</code> was called.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/6%20Per%20Base%20N%20Content.html">FastQC help</a>:</p>
+<p><em>If a sequencer is unable to make a base call with sufficient confidence then it will
+normally substitute an <code>N</code> rather than a conventional base call. This graph shows the
+percentage of base calls at each position for which an <code>N</code> was called.</em></p>
+<p><em>It&#39;s not unusual to see a very low proportion of Ns appearing in a sequence, especially
+nearer the end of a sequence. However, if this proportion rises above a few percent
+it suggests that the analysis pipeline was unable to interpret the data well enough to
+make valid base calls.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Sequence Length Distribution
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><div class="alert alert-info">All samples have sequences of a single length (75bp).</div></div>
+            
+            
+            <div class="mqc-section-plot"></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Sequence Duplication Levels
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The relative level of duplication found for every sequence.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html">FastQC Help</a>:</p>
+<p><em>In a diverse library most sequences will occur only once in the final set.
+A low level of duplication may indicate a very high level of coverage of the
+target sequence, but a high level of duplication is more likely to indicate
+some kind of enrichment bias (eg PCR over amplification). This graph shows
+the degree of duplication for every sequence in a library: the relative
+number of sequences with different degrees of duplication.</em></p>
+<p><em>Only sequences which first appear in the first 100,000 sequences
+in each file are analysed. This should be enough to get a good impression
+for the duplication levels in the whole file. Each sequence is tracked to
+the end of the file to give a representative count of the overall duplication level.</em></p>
+<p><em>The duplication detection requires an exact sequence match over the whole length of
+the sequence. Any reads over 75bp in length are truncated to 50bp for this analysis.</em></p>
+<p><em>In a properly diverse library most sequences should fall into the far left of the
+plot in both the red and blue lines. A general level of enrichment, indicating broad
+oversequencing in the library will tend to flatten the lines, lowering the low end
+and generally raising other categories. More specific enrichments of subsets, or
+the presence of low complexity contaminants will tend to produce spikes towards the
+right of the plot.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Overrepresented sequences by sample
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The total amount of overrepresented sequences found in each library.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>FastQC calculates and lists overrepresented sequences in FastQ files. It would not be
+possible to show this for all samples in a MultiQC report, so instead this plot shows
+the <em>number of sequences</em> categorized as overrepresented.</p>
+<p>Sometimes, a single sequence  may account for a large number of reads in a dataset.
+To show this, the bars are split into two: the first shows the overrepresented reads
+that come from the single most common sequence. The second shows the total count
+from all remaining overrepresented sequences.</p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/9%20Overrepresented%20Sequences.html">FastQC Help</a>:</p>
+<p><em>A normal high-throughput library will contain a diverse set of sequences, with no
+individual sequence making up a tiny fraction of the whole. Finding that a single
+sequence is very overrepresented in the set either means that it is highly biologically
+significant, or indicates that the library is contaminated, or not as diverse as you expected.</em></p>
+<p><em>FastQC lists all the sequences which make up more than 0.1% of the total.
+To conserve memory only sequences which appear in the first 100,000 sequences are tracked
+to the end of the file. It is therefore possible that a sequence which is overrepresented
+but doesn&#39;t appear at the start of the file for some reason could be missed by this module.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="alert alert-info">6 samples had less than 1% of reads made up of overrepresented sequences</div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Top overrepresented sequences
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Top overrepresented sequences across all samples. The table shows 20 
+most overrepresented sequences across all samples, ranked by the number of samples they occur in.</p></div>
+            
+            
+            <div class="mqc-section-plot">
+        
+            <span class="glyphicon glyphicon-copy"></span> Copy table
+        
+        
+            
+                <span class="glyphicon glyphicon-th"></span> Configure Columns
+            
+            
+        
+            <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+        
+        
+            
+                <span class="glyphicon glyphicon glyphicon-stats"></span> Plot
+            
+            
+        <small class="mqc_table_numrows_text">Showing <sup class="mqc_table_numrows">5</sup>/<sub>5</sub> rows and <sup class="mqc_table_numcols">3</sup>/<sub>3</sub> columns.</small>
+        
+        <div class="mqc_table_container">
+            <div class="table-responsive mqc-table-responsive">
+                <table class="table table-condensed mqc_table">
+        <thead><tr><th class="rowheader">Overrepresented sequence</th><th class="samples"><span class="mqc_table_tooltip" title="FastQC (raw): Number of samples where this sequence is overrepresented">Samples</span></th><th class="total_count"><span class="mqc_table_tooltip" title="FastQC (raw): Total number of occurrences of the sequence (among the samples where the sequence is overrepresented)">Occurrences</span></th><th class="total_percent"><span class="mqc_table_tooltip" title="FastQC (raw): Total number of occurrences as the percentage of all reads (among samples where the sequence is overrepresented)">% of all reads</span></th></tr></thead><tbody><tr><th class="rowheader">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</th><td class="data-coloured samples"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bb !important;"></span><span class="val">1</span></div></td><td class="data-coloured total_count"><div class="wrapper"><span class="bar" style="width:66.32197944001317%;background-color:#c3dbec !important;"></span><span class="val">76<span class="mqc_thousandSep"></span>580</span></div></td><td class="data-coloured total_percent"><div class="wrapper"><span class="bar" style="width:0.022225227893911285%;background-color:#fdfeff !important;"></span><span class="val">0.0222%</span></div></td></tr><tr><th class="rowheader">GATCGGAAGAGCACACGTCTGAACTCCAGTCACAGTCAACAATCTCGTAT</th><td class="data-coloured samples"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bb !important;"></span><span class="val">1</span></div></td><td class="data-coloured total_count"><div class="wrapper"><span class="bar" style="width:66.08208405864879%;background-color:#c3dbec !important;"></span><span class="val">76<span class="mqc_thousandSep"></span>303</span></div></td><td class="data-coloured total_percent"><div class="wrapper"><span class="bar" style="width:0.022144836301764337%;background-color:#fdfeff !important;"></span><span class="val">0.0221%</span></div></td></tr><tr><th class="rowheader">GATCGGAAGAGCACACGTCTGAACTCCAGTCACCCGTCCCGATCTCGTAT</th><td class="data-coloured samples"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bb !important;"></span><span class="val">1</span></div></td><td class="data-coloured total_count"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b5c1d3 !important;"></span><span class="val">115<span class="mqc_thousandSep"></span>467</span></div></td><td class="data-coloured total_percent"><div class="wrapper"><span class="bar" style="width:0.03351110458639663%;background-color:#fdfeff !important;"></span><span class="val">0.0335%</span></div></td></tr><tr><th class="rowheader">GATCGGAAGAGCACACGTCTGAACTCCAGTCACAGTTCCGTATCTCGTAT</th><td class="data-coloured samples"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bb !important;"></span><span class="val">1</span></div></td><td class="data-coloured total_count"><div class="wrapper"><span class="bar" style="width:67.02694276286732%;background-color:#c3dbec !important;"></span><span class="val">77<span class="mqc_thousandSep"></span>394</span></div></td><td class="data-coloured total_percent"><div class="wrapper"><span class="bar" style="width:0.022461468890328674%;background-color:#fdfeff !important;"></span><span class="val">0.0225%</span></div></td></tr><tr><th class="rowheader">GATCGGAAGAGCACACGTCTGAACTCCAGTCACATGTCAGAATCTCGTAT</th><td class="data-coloured samples"><div class="wrapper"><span class="bar" style="width:100.0%;background-color:#b3c7bb !important;"></span><span class="val">1</span></div></td><td class="data-coloured total_count"><div class="wrapper"><span class="bar" style="width:92.91226064589883%;background-color:#b5c7db !important;"></span><span class="val">107<span class="mqc_thousandSep"></span>283</span></div></td><td class="data-coloured total_percent"><div class="wrapper"><span class="bar" style="width:0.031135924838632596%;background-color:#fdfeff !important;"></span><span class="val">0.0311%</span></div></td></tr></tbody></table></div></div>
+    
+    <div class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>&#215;</span>
+            <h4 class="modal-title">FastQC: Top overrepresented sequences: Columns</h4>
+          </div>
+          <div class="modal-body">
+            <p>Uncheck the tick box to hide columns. Click and drag the handle on the left to change order. Table ID: <code>fastqc_top_overrepresented_sequences_table</code></p>
+            <p>
+                Show All
+                Show None
+            </p>
+            <table class="table mqc_table mqc_sortable mqc_configModal_table">
+              <thead>
+                <tr>
+                  <th class="sorthandle" style="text-align:center;">Sort</th>
+                  <th style="text-align:center;">Visible</th>
+                  <th>Group</th>
+                  <th>Column</th>
+                  <th>Description</th>
+                  <th>ID</th>
+                  <th>Scale</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="samples" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>Samples</td>
+          <td>Number of samples where this sequence is overrepresented</td>
+          <td><code>samples</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="total_count" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>Occurrences</td>
+          <td>Total number of occurrences of the sequence (among the samples where the sequence is overrepresented)</td>
+          <td><code>total_count</code></td>
+          <td>None</td>
+        </tr>
+        <tr class="total_percent" style="background-color: rgba;">
+          <td class="sorthandle ui-sortable-handle">||</td>
+          <td style="text-align:center;">
+            
+          </td>
+          <td>FastQC (raw)</td>
+          <td>% of all reads</td>
+          <td>Total number of occurrences as the percentage of all reads (among samples where the sequence is overrepresented)</td>
+          <td><code>total_percent</code></td>
+          <td>None</td>
+        </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="modal-footer"> Close </div>
+    </div> </div> </div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Adapter Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The cumulative percentage count of the proportion of your
+            library which has seen each of the adapter sequences at each position.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>Note that only samples with ≥ 0.1% adapter contamination are shown.</p>
+<p>There may be several lines per sample, as one is shown for each adapter
+detected in the file.</p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/10%20Adapter%20Content.html">FastQC Help</a>:</p>
+<p><em>The plot shows a cumulative percentage count of the proportion
+of your library which has seen each of the adapter sequences at each position.
+Once a sequence has been seen in a read it is counted as being present
+right through to the end of the read so the percentages you see will only
+increase as the read length goes on.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc">
+            
+              <h3>
+                  Status Checks
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Status for each FastQC section showing whether results seem entirely normal (green),
+slightly abnormal (orange) or very unusual (red).</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>FastQC assigns a status for each section of the report.
+These give a quick evaluation of whether the results of the analysis seem
+entirely normal (green), slightly abnormal (orange) or very unusual (red).</p>
+<p>It is important to stress that although the analysis results appear to give a pass/fail result,
+these evaluations must be taken in the context of what you expect from your library.
+A &#39;normal&#39; sample as far as FastQC is concerned is random and diverse.
+Some experiments may be expected to produce libraries which are biased in particular ways.
+You should treat the summary evaluations therefore as pointers to where you should concentrate
+your attention and understand why your library may not look random and diverse.</p>
+<p>Specific guidance on how to interpret the output of each module can be found in the relevant
+report section, or in the <a rel="noopener" href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/">FastQC help</a>.</p>
+<p>In this heatmap, we summarise all of these into a single heatmap for a quick overview.
+Note that not all FastQC sections have plots in MultiQC reports, but all status checks
+are shown in this heatmap.</p></div>
+              </div>
+            
+            <div class="mqc-section-plot">
+    <div class="mqc_hcplot_plotgroup">
+        <div class="btn-group hc_switch_group">
+            
+                <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+            
+        </div>
+        <div class="mqc_hcplot_range_sliders">
+            <div>
+                <label for="fastqc-status-check-heatmap_range_slider_min_txt">Min:</label>
+                
+                
+            </div>
+            <div>
+                <label for="fastqc-status-check-heatmap_range_slider_max_txt">Max:</label>
+                
+                
+            </div>
+        </div>
+        <div class="hc-plot-wrapper">
+            <div class="hc-plot not_rendered hc-heatmap">
+                <small>loading..</small>
+            </div>
+        </div>
+    </div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">Cutadapt</h2>
+          
+        </div>
+        <p><a rel="noopener" href="https://cutadapt.readthedocs.io/" target="_blank">Cutadapt</a> is a tool to find and remove adapter sequences, primers, poly-A
+                    tails and other types of unwanted sequence from your high-throughput
+                    sequencing reads.<em class="text-muted small" style="margin-left: 1rem;">DOI:  <a rel="noopener" class="module-doi" href="https://doi.org/10.14806/ej.17.1.200" target="_blank">10.14806/ej.17.1.200</a>.</em></p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-cutadapt">
+            
+              <h3>
+                  Filtered Reads
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>This plot shows the number of reads (SE) / pairs (PE) removed by Cutadapt.</p></div>
+            
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group"> 
+Counts 
+Percentages 
+</div> <div class="hc-plot-wrapper">
+        <div class="hc-plot not_rendered hc-bar-plot"><small>loading..</small></div>
+    </div></div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+    </div> 
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-cutadapt">
+            
+              <h3>
+                  Trimmed Sequence Lengths (3&#39;)
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>This plot shows the number of reads with certain lengths of adapter trimmed for the 3&#39; end.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>Obs/Exp shows the raw counts divided by the number expected due to sequencing errors.
+A defined peak may be related to adapter length.</p>
+<p>See the <a rel="noopener" href="http://cutadapt.readthedocs.org/en/latest/guide.html#how-to-read-the-report">cutadapt documentation</a>
+for more information on how these numbers are generated.</p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group">
+Counts
+Obs/Exp
+</div>
+
+<div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">FastQC (trimmed)</h2>
+          
+        </div>
+        <p><a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC (trimmed)</a> This section of the report shows FastQC results after adapter trimming.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Sequence Counts
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Sequence counts for each sample. Duplicate read counts are an estimate only.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>This plot show the total number of reads, broken down into unique and duplicate
+if possible (only more recent versions of FastQC give duplicate info).</p>
+<p>You can read more about duplicate calculation in the
+<a rel="noopener" href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html">FastQC documentation</a>.
+A small part has been copied here for convenience:</p>
+<p><em>Only sequences which first appear in the first 100,000 sequences
+in each file are analysed. This should be enough to get a good impression
+for the duplication levels in the whole file. Each sequence is tracked to
+the end of the file to give a representative count of the overall duplication level.</em></p>
+<p><em>The duplication detection requires an exact sequence match over the whole length of
+the sequence. Any reads over 75bp in length are truncated to 50bp for this analysis.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group"> 
+Number of reads 
+Percentages 
+</div> <div class="hc-plot-wrapper">
+        <div class="hc-plot not_rendered hc-bar-plot"><small>loading..</small></div>
+    </div></div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+    </div> 
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Sequence Quality Histograms
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The mean quality value across each base position in the read.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>To enable multiple samples to be plotted on the same graph, only the mean quality
+scores are plotted (unlike the box plots seen in FastQC reports).</p>
+<p>Taken from the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/2%20Per%20Base%20Sequence%20Quality.html">FastQC help</a>:</p>
+<p><em>The y-axis on the graph shows the quality scores. The higher the score, the better
+the base call. The background of the graph divides the y axis into very good quality
+calls (green), calls of reasonable quality (orange), and calls of poor quality (red).
+The quality of calls on most platforms will degrade as the run progresses, so it is
+common to see base calls falling into the orange area towards the end of a read.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Per Sequence Quality Scores
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The number of reads with average quality scores. Shows if a subset of reads has poor quality.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/3%20Per%20Sequence%20Quality%20Scores.html">FastQC help</a>:</p>
+<p><em>The per sequence quality score report allows you to see if a subset of your
+sequences have universally low quality values. It is often the case that a
+subset of sequences will have universally poor quality, however these should
+represent only a small percentage of the total sequences.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Per Base Sequence Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The proportion of each base position for which each of the four normal DNA bases has been called.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>To enable multiple samples to be shown in a single plot, the base composition data
+is shown as a heatmap. The colours represent the balance between the four bases:
+an even distribution should give an even muddy brown colour. Hover over the plot
+to see the percentage of the four bases under the cursor.</p>
+<p><strong>To see the data as a line plot, as in the original FastQC graph, click on a sample track.</strong></p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html">FastQC help</a>:</p>
+<p><em>Per Base Sequence Content plots out the proportion of each base position in a
+file for which each of the four normal DNA bases has been called.</em></p>
+<p><em>In a random library you would expect that there would be little to no difference
+between the different bases of a sequence run, so the lines in this plot should
+run parallel with each other. The relative amount of each base should reflect
+the overall amount of these bases in your genome, but in any case they should
+not be hugely imbalanced from each other.</em></p>
+<p><em>It&#39;s worth noting that some types of library will always produce biased sequence
+composition, normally at the start of the read. Libraries produced by priming
+using random hexamers (including nearly all RNA-Seq libraries) and those which
+were fragmented using transposases inherit an intrinsic bias in the positions
+at which reads start. This bias does not concern an absolute sequence, but instead
+provides enrichement of a number of different K-mers at the 5&#39; end of the reads.
+Whilst this is a true technical bias, it isn&#39;t something which can be corrected
+by trimming and in most cases doesn&#39;t seem to adversely affect the downstream
+analysis.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"></div>
+            <div>
+            <div class="alert alert-info">
+               <span class="glyphicon glyphicon-hand-up"></span>
+               Click a sample row to see a line plot for that dataset.
+            </div>
+            <h5><span class="s_name text-primary"><span class="glyphicon glyphicon-info-sign"></span> Rollover for sample name</span></h5>
+            <span class="glyphicon glyphicon-download-alt"></span> Export Plot
+            <div class="fastqc_seq_heatmap_key">
+                Position: <span>-</span>
+                <div><span> %T: <span>-</span></span></div>
+                <div><span> %C: <span>-</span></span></div>
+                <div><span> %A: <span>-</span></span></div>
+                <div><span> %G: <span>-</span></span></div>
+            </div>
+            <div class="fastqc-overlay-plot">
+                <div class="fastqc_per_base_sequence_content_plot hc-plot has-custom-export">
+                    <canvas height="100%" width="800px" style="width:100%;"></canvas>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Per Sequence GC Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The average GC content of reads. Normal random library typically have a
+        roughly normal distribution of GC content.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/5%20Per%20Sequence%20GC%20Content.html">FastQC help</a>:</p>
+<p><em>This module measures the GC content across the whole length of each sequence
+in a file and compares it to a modelled normal distribution of GC content.</em></p>
+<p><em>In a normal random library you would expect to see a roughly normal distribution
+of GC content where the central peak corresponds to the overall GC content of
+the underlying genome. Since we don&#39;t know the the GC content of the genome the
+modal GC content is calculated from the observed data and used to build a
+reference distribution.</em></p>
+<p><em>An unusually shaped distribution could indicate a contaminated library or
+some other kinds of biased subset. A normal distribution which is shifted
+indicates some systematic bias which is independent of base position. If there
+is a systematic bias which creates a shifted normal distribution then this won&#39;t
+be flagged as an error by the module since it doesn&#39;t know what your genome&#39;s
+GC content should be.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="btn-group hc_switch_group">
+Percentages
+Counts
+</div>
+
+<div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Per Base N Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The percentage of base calls at each position for which an <code>N</code> was called.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/6%20Per%20Base%20N%20Content.html">FastQC help</a>:</p>
+<p><em>If a sequencer is unable to make a base call with sufficient confidence then it will
+normally substitute an <code>N</code> rather than a conventional base call. This graph shows the
+percentage of base calls at each position for which an <code>N</code> was called.</em></p>
+<p><em>It&#39;s not unusual to see a very low proportion of Ns appearing in a sequence, especially
+nearer the end of a sequence. However, if this proportion rises above a few percent
+it suggests that the analysis pipeline was unable to interpret the data well enough to
+make valid base calls.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Sequence Length Distribution
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The distribution of fragment sizes (read lengths) found.
+                    See the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/7%20Sequence%20Length%20Distribution.html">FastQC help</a></p></div>
+            
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Sequence Duplication Levels
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The relative level of duplication found for every sequence.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html">FastQC Help</a>:</p>
+<p><em>In a diverse library most sequences will occur only once in the final set.
+A low level of duplication may indicate a very high level of coverage of the
+target sequence, but a high level of duplication is more likely to indicate
+some kind of enrichment bias (eg PCR over amplification). This graph shows
+the degree of duplication for every sequence in a library: the relative
+number of sequences with different degrees of duplication.</em></p>
+<p><em>Only sequences which first appear in the first 100,000 sequences
+in each file are analysed. This should be enough to get a good impression
+for the duplication levels in the whole file. Each sequence is tracked to
+the end of the file to give a representative count of the overall duplication level.</em></p>
+<p><em>The duplication detection requires an exact sequence match over the whole length of
+the sequence. Any reads over 75bp in length are truncated to 50bp for this analysis.</em></p>
+<p><em>In a properly diverse library most sequences should fall into the far left of the
+plot in both the red and blue lines. A general level of enrichment, indicating broad
+oversequencing in the library will tend to flatten the lines, lowering the low end
+and generally raising other categories. More specific enrichments of subsets, or
+the presence of low complexity contaminants will tend to produce spikes towards the
+right of the plot.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="mqc_hcplot_plotgroup"><div class="hc-plot-wrapper"><div class="hc-plot not_rendered hc-line-plot"><small>loading..</small></div></div></div> 
+</div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Overrepresented sequences by sample
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The total amount of overrepresented sequences found in each library.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>FastQC calculates and lists overrepresented sequences in FastQ files. It would not be
+possible to show this for all samples in a MultiQC report, so instead this plot shows
+the <em>number of sequences</em> categorized as overrepresented.</p>
+<p>Sometimes, a single sequence  may account for a large number of reads in a dataset.
+To show this, the bars are split into two: the first shows the overrepresented reads
+that come from the single most common sequence. The second shows the total count
+from all remaining overrepresented sequences.</p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/9%20Overrepresented%20Sequences.html">FastQC Help</a>:</p>
+<p><em>A normal high-throughput library will contain a diverse set of sequences, with no
+individual sequence making up a tiny fraction of the whole. Finding that a single
+sequence is very overrepresented in the set either means that it is highly biologically
+significant, or indicates that the library is contaminated, or not as diverse as you expected.</em></p>
+<p><em>FastQC lists all the sequences which make up more than 0.1% of the total.
+To conserve memory only sequences which appear in the first 100,000 sequences are tracked
+to the end of the file. It is therefore possible that a sequence which is overrepresented
+but doesn&#39;t appear at the start of the file for some reason could be missed by this module.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="alert alert-info">6 samples had less than 1% of reads made up of overrepresented sequences</div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Top overrepresented sequences
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Top overrepresented sequences across all samples. The table shows 20 
+most overrepresented sequences across all samples, ranked by the number of samples they occur in.</p></div>
+            
+            
+            <div class="mqc-section-plot">
+        
+            <span class="glyphicon glyphicon-copy"></span> Copy table
+        
+        
+        
+            <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+        
+        
+        <small class="mqc_table_numrows_text">Showing <sup class="mqc_table_numrows">0</sup>/<sub>0</sub> rows.</small>
+        
+        <div class="mqc_table_container">
+            <div class="table-responsive mqc-table-responsive">
+                <table class="table table-condensed mqc_table">
+        <thead><tr><th class="rowheader">Overrepresented sequence</th></tr></thead><tbody></tbody></table></div></div>
+    
+    <div class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>&#215;</span>
+            <h4 class="modal-title">FastQC: Top overrepresented sequences: Columns</h4>
+          </div>
+          <div class="modal-body">
+            <p>Uncheck the tick box to hide columns. Click and drag the handle on the left to change order. Table ID: <code>fastqc_top_overrepresented_sequences_table</code></p>
+            <p>
+                Show All
+                Show None
+            </p>
+            <table class="table mqc_table mqc_sortable mqc_configModal_table">
+              <thead>
+                <tr>
+                  <th class="sorthandle" style="text-align:center;">Sort</th>
+                  <th style="text-align:center;">Visible</th>
+                  <th>Group</th>
+                  <th>Column</th>
+                  <th>Description</th>
+                  <th>ID</th>
+                  <th>Scale</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+        </div>
+        <div class="modal-footer"> Close </div>
+    </div> </div> </div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Adapter Content
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>The cumulative percentage count of the proportion of your
+            library which has seen each of the adapter sequences at each position.</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>Note that only samples with ≥ 0.1% adapter contamination are shown.</p>
+<p>There may be several lines per sample, as one is shown for each adapter
+detected in the file.</p>
+<p>From the <a rel="noopener" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/10%20Adapter%20Content.html">FastQC Help</a>:</p>
+<p><em>The plot shows a cumulative percentage count of the proportion
+of your library which has seen each of the adapter sequences at each position.
+Once a sequence has been seen in a read it is counted as being present
+right through to the end of the read so the percentages you see will only
+increase as the read length goes on.</em></p></div>
+              </div>
+            
+            <div class="mqc-section-plot"><div class="alert alert-info">No samples found with any adapter contamination &gt; 0.1%</div></div>
+            
+
+            <hr/>
+          </div>
+        
+    
+  
+      
+        
+          
+          <div class="mqc-section mqc-section-fastqc-1">
+            
+              <h3>
+                  Status Checks
+                  
+                    
+                      <span class="glyphicon glyphicon-question-sign"></span>
+                      Help
+                    
+                  
+              </h3>
+            
+            <div class="mqc-section-description"><p>Status for each FastQC section showing whether results seem entirely normal (green),
+slightly abnormal (orange) or very unusual (red).</p></div>
+            
+            
+              <div class="collapse mqc-section-helptext">
+                <div class="well"><p>FastQC assigns a status for each section of the report.
+These give a quick evaluation of whether the results of the analysis seem
+entirely normal (green), slightly abnormal (orange) or very unusual (red).</p>
+<p>It is important to stress that although the analysis results appear to give a pass/fail result,
+these evaluations must be taken in the context of what you expect from your library.
+A &#39;normal&#39; sample as far as FastQC is concerned is random and diverse.
+Some experiments may be expected to produce libraries which are biased in particular ways.
+You should treat the summary evaluations therefore as pointers to where you should concentrate
+your attention and understand why your library may not look random and diverse.</p>
+<p>Specific guidance on how to interpret the output of each module can be found in the relevant
+report section, or in the <a rel="noopener" href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/">FastQC help</a>.</p>
+<p>In this heatmap, we summarise all of these into a single heatmap for a quick overview.
+Note that not all FastQC sections have plots in MultiQC reports, but all status checks
+are shown in this heatmap.</p></div>
+              </div>
+            
+            <div class="mqc-section-plot">
+    <div class="mqc_hcplot_plotgroup">
+        <div class="btn-group hc_switch_group">
+            
+                <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Sort by highlight
+            
+        </div>
+        <div class="mqc_hcplot_range_sliders">
+            <div>
+                <label for="fastqc-status-check-heatmap-1_range_slider_min_txt">Min:</label>
+                
+                
+            </div>
+            <div>
+                <label for="fastqc-status-check-heatmap-1_range_slider_max_txt">Max:</label>
+                
+                
+            </div>
+        </div>
+        <div class="hc-plot-wrapper">
+            <div class="hc-plot not_rendered hc-heatmap">
+                <small>loading..</small>
+            </div>
+        </div>
+    </div> 
+</div>
+            
+
+            
+          </div>
+        
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">nf-core/rnaseq Methods Description</h2>
+          
+        </div>
+        <p>Suggested text and references to use when describing pipeline usage within the methods section of a publication.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-nf-core-rnaseq-methods-description">
+            
+            
+            
+            
+            
+            <h4>Methods</h4>
+<p>Data was processed using nf-core/rnaseq v3.14.0 (doi: <a rel="noopener" href="https://doi.org/https://doi.org/10.5281/zenodo.1400710">https://doi.org/10.5281/zenodo.1400710</a>) of the nf-core collection of workflows (<a rel="noopener" href="https://doi.org/10.1038/s41587-020-0439-x">Ewels <em>et al.</em>, 2020</a>), utilising reproducible software environments from the Bioconda (<a rel="noopener" href="https://doi.org/10.1038/s41592-018-0046-7">Gr&#252;ning <em>et al.</em>, 2018</a>) and Biocontainers (<a rel="noopener" href="https://doi.org/10.1093/bioinformatics/btx192">da Veiga Leprevost <em>et al.</em>, 2017</a>) projects.</p>
+<p>The pipeline was executed with Nextflow v23.04.1 (<a rel="noopener" href="https://doi.org/10.1038/nbt.3820">Di Tommaso <em>et al.</em>, 2017</a>) with the following command:</p>
+<pre><code>nextflow run nf-core/rnaseq -r 3.14.0 --input /scratch/zmk256/FinalProjectA/samplesheet.csv --outdir res --fasta /scratch/zmk256/FinalProjectA/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz --gtf /scratch/zmk256/FinalProjectA/Homo_sapiens.GRCh38.111.gtf --extra_salmon_quant_args &#39;--gcBias &#39; -profile nyu_hpc -params-file /scratch/zmk256/FinalProjectA/rna.json</code></pre>
+<p></p>
+<h4>References</h4>
+<ul>
+  <li>Di Tommaso, P., Chatzou, M., Floden, E. W., Barja, P. P., Palumbo, E., &amp; Notredame, C. (2017). Nextflow enables reproducible computational workflows. Nature Biotechnology, 35(4), 316-319. doi: <a rel="noopener" href="https://doi.org/10.1038/nbt.3820">10.1038/nbt.3820</a></li>
+  <li>Ewels, P. A., Peltzer, A., Fillinger, S., Patel, H., Alneberg, J., Wilm, A., Garcia, M. U., Di Tommaso, P., &amp; Nahnsen, S. (2020). The nf-core framework for community-curated bioinformatics pipelines. Nature Biotechnology, 38(3), 276-278. doi: <a rel="noopener" href="https://doi.org/10.1038/s41587-020-0439-x">10.1038/s41587-020-0439-x</a></li>
+  <li>Gr&#252;ning, B., Dale, R., Sj&#246;din, A., Chapman, B. A., Rowe, J., Tomkins-Tinch, C. H., Valieris, R., K&#246;ster, J., &amp; Bioconda Team. (2018). Bioconda: sustainable and comprehensive software distribution for the life sciences. Nature Methods, 15(7), 475–476. doi: <a rel="noopener" href="https://doi.org/10.1038/s41592-018-0046-7">10.1038/s41592-018-0046-7</a></li>
+  <li>da Veiga Leprevost, F., Gr&#252;ning, B. A., Alves Aflitos, S., R&#246;st, H. L., Uszkoreit, J., Barsnes, H., Vaudel, M., Moreno, P., Gatto, L., Weber, J., Bai, M., Jimenez, R. C., Sachsenberg, T., Pfeuffer, J., Vera Alvarez, R., Griss, J., Nesvizhskii, A. I., &amp; Perez-Riverol, Y. (2017). BioContainers: an open-source and community-driven framework for software standardization. Bioinformatics (Oxford, England), 33(16), 2580–2582. doi: <a rel="noopener" href="https://doi.org/10.1093/bioinformatics/btx192">10.1093/bioinformatics/btx192</a></li>
+  
+</ul>
+<div class="alert alert-info">
+  <h5>Notes:</h5>
+  <ul>
+    
+    <li>The command above does not include parameters contained in any configs or profiles that may have been used. Ensure the config file is also uploaded with your publication!</li>
+    <li>You should also cite all software used within this run. Check the &quot;Software Versions&quot; of this report to get version information.</li>
+  </ul>
+</div>
+
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">nf-core/rnaseq Software Versions</h2>
+          
+        </div>
+        <p>are collected at run time from the software output.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-software_versions">
+            
+            
+            
+            
+            
+            
+<table class="table" style="width:100%;">
+    <thead>
+        <tr>
+            <th> Process Name </th>
+            <th> Software </th>
+            <th> Version  </th>
+        </tr>
+    </thead>
+
+<tbody>
+<tr>
+    <td><samp>CUSTOM_DUMPSOFTWAREVERSIONS</samp></td>
+    <td><samp>python</samp></td>
+    <td><samp>3.11.7</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>yaml</samp></td>
+    <td><samp>5.4.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>CUSTOM_GETCHROMSIZES</samp></td>
+    <td><samp>getchromsizes</samp></td>
+    <td><samp>1.16.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>DESEQ2_QC_PSEUDO</samp></td>
+    <td><samp>bioconductor-deseq2</samp></td>
+    <td><samp>1.28.0</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>r-base</samp></td>
+    <td><samp>4.0.3</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>FASTQC</samp></td>
+    <td><samp>fastqc</samp></td>
+    <td><samp>0.12.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>FQ_SUBSAMPLE</samp></td>
+    <td><samp>fq</samp></td>
+    <td><samp>0.9.1 (2022-02-22)</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>GTF2BED</samp></td>
+    <td><samp>perl</samp></td>
+    <td><samp>5.26.2</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>GTF_FILTER</samp></td>
+    <td><samp>python</samp></td>
+    <td><samp>3.9.5</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>GUNZIP_FASTA</samp></td>
+    <td><samp>gunzip</samp></td>
+    <td><samp>1.10</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>MAKE_TRANSCRIPTS_FASTA</samp></td>
+    <td><samp>rsem</samp></td>
+    <td><samp>1.3.1</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>star</samp></td>
+    <td><samp>2.7.10a</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>SALMON_INDEX</samp></td>
+    <td><samp>salmon</samp></td>
+    <td><samp>1.10.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>SALMON_QUANT</samp></td>
+    <td><samp>salmon</samp></td>
+    <td><samp>1.10.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>SE_GENE</samp></td>
+    <td><samp>bioconductor-summarizedexperiment</samp></td>
+    <td><samp>1.24.0</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>r-base</samp></td>
+    <td><samp>4.1.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>TRIMGALORE</samp></td>
+    <td><samp>cutadapt</samp></td>
+    <td><samp>3.4</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>trimgalore</samp></td>
+    <td><samp>0.6.7</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>TX2GENE</samp></td>
+    <td><samp>python</samp></td>
+    <td><samp>3.9.5</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>TXIMPORT</samp></td>
+    <td><samp>bioconductor-tximeta</samp></td>
+    <td><samp>1.12.0</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>r-base</samp></td>
+    <td><samp>4.1.1</samp></td>
+</tr>
+
+</tbody>
+<tbody>
+<tr>
+    <td><samp>Workflow</samp></td>
+    <td><samp>Nextflow</samp></td>
+    <td><samp>23.04.1</samp></td>
+</tr>
+
+<tr>
+    <td><samp></samp></td>
+    <td><samp>nf-core/rnaseq</samp></td>
+    <td><samp>3.14.0</samp></td>
+</tr>
+
+</tbody>
+</table>
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  <hr/>
+  
+
+  
+  <div class="mqc-module-section">
+    
+      
+      <div class="mqc-module-section-first">
+        <div class="mqc-module-title-section">
+          <h2 class="mqc-module-title">nf-core/rnaseq Workflow Summary</h2>
+          
+        </div>
+        <p> - this information is collected when the pipeline is started.</p>
+        
+      
+        
+          
+          <div class="mqc-section mqc-section-nf-core-rnaseq-summary">
+            
+            
+            
+            
+            
+            <p style="font-size:110%;"><b>Core Nextflow options</b></p>
+<dl class="dl-horizontal">
+    <dt>revision</dt><dd><samp>3.14.0</samp></dd>
+    <dt>runName</dt><dd><samp>nasty_kilby</samp></dd>
+    <dt>containerEngine</dt><dd><samp>singularity</samp></dd>
+    <dt>launchDir</dt><dd><samp>/scratch/zmk256/FinalProjectA</samp></dd>
+    <dt>workDir</dt><dd><samp>/scratch/zmk256/FinalProjectA/work</samp></dd>
+    <dt>projectDir</dt><dd><samp>/home/zmk256/.nextflow/assets/nf-core/rnaseq</samp></dd>
+    <dt>userName</dt><dd><samp>zmk256</samp></dd>
+    <dt>profile</dt><dd><samp>nyu_hpc</samp></dd>
+    <dt>configFiles</dt><dd><samp><span style="color:#999999;">N/A</span></samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Input/output options</b></p>
+<dl class="dl-horizontal">
+    <dt>input</dt><dd><samp>/scratch/zmk256/FinalProjectA/samplesheet.csv</samp></dd>
+    <dt>outdir</dt><dd><samp>res</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Reference genome options</b></p>
+<dl class="dl-horizontal">
+    <dt>fasta</dt><dd><samp>/scratch/zmk256/FinalProjectA/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz</samp></dd>
+    <dt>gtf</dt><dd><samp>/scratch/zmk256/FinalProjectA/Homo_sapiens.GRCh38.111.gtf</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Alignment options</b></p>
+<dl class="dl-horizontal">
+    <dt>pseudo_aligner</dt><dd><samp>salmon</samp></dd>
+    <dt>min_mapped_reads</dt><dd><samp>5</samp></dd>
+    <dt>extra_salmon_quant_args</dt><dd><samp>--gcBias</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Optional outputs</b></p>
+<dl class="dl-horizontal">
+    <dt>save_reference</dt><dd><samp>true</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Process skipping options</b></p>
+<dl class="dl-horizontal">
+    <dt>skip_alignment</dt><dd><samp>true</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Institutional config options</b></p>
+<dl class="dl-horizontal">
+    <dt>config_profile_description</dt><dd><samp>New York University HPC profile provided by nf-core/configs.</samp></dd>
+    <dt>config_profile_contact</dt><dd><samp>HPC@nyu.edu</samp></dd>
+    <dt>config_profile_url</dt><dd><samp>https://hpc.nyu.edu</samp></dd>
+</dl>
+<p style="font-size:110%;"><b>Max job request options</b></p>
+<dl class="dl-horizontal">
+    <dt>max_cpus</dt><dd><samp>4</samp></dd>
+    <dt>max_memory</dt><dd><samp>22.GB</samp></dd>
+    <dt>max_time</dt><dd><samp>4.h</samp></dd>
+</dl>
+
+
+            
+          </div>
+        
+    
+    </div> 
+    
+  
+  </div>
+  
+  
+
+
+</div>
+
+<div class="footer">
+  <div class="container-fluid">
+    
+
+<p>
+    <a rel="noopener" href="https://seqera.io/" target="_blank" class="pull-right seqera-logo">
+        <img src="javascript://"/>
+    </a>
+    <strong>
+        <a rel="noopener" href="http://multiqc.info" target="_blank">MultiQC v1.19</a>
+    </strong>
+    - Written by <a rel="noopener" href="http://phil.ewels.co.uk" target="_blank">Phil Ewels</a>,
+    available on <a rel="noopener" href="https://github.com/ewels/MultiQC" target="_blank">GitHub</a>.
+</p>
+<p>
+    This report uses <a rel="noopener" href="http://www.highcharts.com/" target="_blank">HighCharts</a>,
+    <a rel="noopener" href="https://jquery.com/" target="_blank">jQuery</a>,
+    <a rel="noopener" href="https://jqueryui.com/" target="_blank">jQuery UI</a>,
+    <a rel="noopener" href="http://getbootstrap.com/" target="_blank">Bootstrap</a>,
+    <a rel="noopener" href="https://github.com/eligrey/FileSaver.js" target="_blank">FileSaver.js</a> and
+    <a rel="noopener" href="https://clipboardjs.com/" target="_blank">clipboard.js</a>.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>&#215;</span>
+        <h3 class="modal-title">Plot Table Data</h3>
+      </div>
+      <div class="modal-body">
+        
+          
+          <div class="row">
+            <div class="col-sm-6">
+              
+                <option value="">Select Column</option>
+              
+            </div>
+            <div class="col-sm-6">
+              
+                <option value="">Select Column</option>
+              
+            </div>
+          </div>
+          <div class="hc-plot-wrapper">
+            <div class="hc-plot not_rendered hc-scatter-plot no-handle" style="width:566px;height: 510px;">
+              <small>Please select two table columns.</small>
+            </div>
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        Close
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>&#215;</span>
+        <h3 class="modal-title">Regex Help</h3>
+      </div>
+      <div class="modal-body">
+        <p>Toolbox search strings can behave as regular expressions (regexes). Click a button below to see an example of it in action. Try modifying them yourself in the text box.</p>
+        <div class="row">
+          <div class="col-sm-6 regex_example_buttons">
+            <code>^</code> (start of string)
+            <code>$</code> (end of string)
+            <code>[]</code> (character choice)
+            <code>\d</code> (shorthand for <code>[0-9]</code>)
+            <code>\w</code> (shorthand for <code>[0-9a-zA-Z_]</code>)
+            <code>.</code> (any character)
+            <code>\.</code> (literal full stop)
+            <code>()</code> <code>|</code> (group / separator)
+            <code>*</code> (prev char 0 or more)
+            <code>+</code> (prev char 1 or more)
+            <code>?</code> (prev char 0 or 1)
+            <code>{}</code> (char num times)
+            <code>{,}</code> (count range)
+          </div>
+          <div class="col-sm-6 regex_example_demo">
+            
+<pre>
+<span>samp_1</span>
+<span>samp_1_edited</span>
+<span>samp_2</span>
+<span>samp_2_edited</span>
+<span>samp_3</span>
+<span>samp_3_edited</span>
+<span>prepended_samp_1</span>
+<span>tmp_samp_1_edited</span>
+<span>tmpp_samp_1_edited</span>
+<span>tmppp_samp_1_edited</span>
+<span>#samp_1_edited.tmp</span>
+<span>samp_11</span>
+<span>samp_11111</span>
+</pre>
+            <p>See <a rel="noopener" href="https://regex101.com/" target="_blank">regex101.com</a> for a more heavy duty testing suite.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        Close
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2024.5.194/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.5,
+							'renderLatex': true
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2024.5.194/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script></body></html>
