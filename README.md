@@ -8,8 +8,8 @@ This project presents a reproducible RNA-Seq pipeline for breast cancer differen
 - Perform enrichment analysis to infer functional pathways and disease mechanisms.
 - Demonstrate reproducible, scalable bioinformatics using NextFlow
 
-- ## Files in this Repository
-- 
+## Files in this Repository
+
 | File | Description |
 | `Report` | Final report including the project summary, methods, results, discussion, and code |
 | `PCA_plot` | PCA Plot
